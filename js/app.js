@@ -6,12 +6,12 @@
     $("#d_o_b").datepicker({
         changeMonth: true,
         changeYear: true,
-        yearRange: '1975:2018',
+        yearRange: '1975:2000',
     });
     $("#edit_d_o_b").datepicker({
         changeMonth: true,
         changeYear: true,
-        yearRange: '1975:2018',
+        yearRange: '1975:2000',
     })
 })();
 
@@ -157,7 +157,7 @@ function insertIntoTableView(item, tableIndex) {
     lastNameCell.innerHTML = item.last_name;
     emailCell.innerHTML = item.email;
     dateOfBirthCell.innerHTML = item.d_o_b;
-    designationCell.innerHTML = item.designation;
+    designationCell.innerHTML = '<a class="tag">'+item.designation+'</a>'
     var guid = item.id;
 
     actionCell.innerHTML = '<button class="btn btn-sm btn-default" onclick="showMemberData(' + guid + ')">View</button> ' +
