@@ -1,6 +1,6 @@
 # CRUD with JS and HTML5 localstorage
 
-It's a basic CRUD(create, update, read, delete) based application with ES5 where data is saving in to the HTML5 localstorage. It's a practice project for learning JS DOM and HTML5.
+It's a basic CRUD(create, read, update, delete) based application with ES5 where data is saving in to the HTML5 localstorage. It's a practice project for learning JS DOM and HTML5.
 
 ## Getting Started
 
@@ -19,3 +19,9 @@ HTML5, CSS3, JS(ES6), Local Server
 * [ES6](https://developer.mozilla.org/bm/docs/Web/JavaScript)
 * [HTML5](https://www.w3schools.com/html/html5_intro.asp)
 * [CSS3](https://www.w3schools.com/css/default.asp)
+
+## Features
+
+* You can Create, Read, Update and Delete Data
+* You can Search any data
+* Ascending and Descending Sorting of Data
