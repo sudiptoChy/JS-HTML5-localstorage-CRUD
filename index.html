@@ -11,7 +11,8 @@
     <title>JS CRUD</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -70,24 +71,34 @@
                         <div class="modal-body">
                             <form id="input_form" onsubmit="saveMemberInfo(); return false;">
                                 <div class="form-group">
-                                    <label for="first_name">First Name <span class="required-field">*</span></label>
+                                    <label for="first_name">First Name
+                                        <span class="required-field">*</span>
+                                    </label>
                                     <input type="text" class="form-control" placeholder="Enter First Name" id="first_name" required />
                                 </div>
                                 <div class="form-group">
-                                    <label for="last_name">Last Name <span class="required-field">*</span></label>
+                                    <label for="last_name">Last Name
+                                        <span class="required-field">*</span>
+                                    </label>
                                     <input type="text" class="form-control" placeholder="Enter Last Name" id="last_name" required />
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email <span class="required-field">*</span></label>
+                                    <label for="email">Email
+                                        <span class="required-field">*</span>
+                                    </label>
                                     <input type="email" class="form-control" placeholder="Enter Email" id="email" required />
                                 </div>
                                 <div class="form-group">
-                                    <label for="d_o_b">Date of Birth (mm/dd/yy) <span class="required-field">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter Date of birth" id="d_o_b" required />
+                                    <label for="d_o_b">Date of Birth (mm/dd/yy)
+                                        <span class="required-field">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Enter Date of birth" id="d_o_b" required onkeypress="return false;"/>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="designation">Designation <span class="required-field">*</span></label>
+                                    <label for="designation">Designation
+                                        <span class="required-field">*</span>
+                                    </label>
                                     <input type="text" class="form-control" placeholder="Enter Designation" id="designation" required />
                                 </div>
 
@@ -138,7 +149,7 @@
                     <strong>No Data Found, Please Enter Some Data</strong>
                 </div>
             </div>
-           
+
         </div>
 
     </div>
@@ -199,31 +210,41 @@
                     <div class="modal-body">
                         <form onsubmit="updateMemberData(); return false;">
                             <div class="form-group">
-                                <label for="edit_first_name">First Name <span class="required-field">*</span></label>
+                                <label for="edit_first_name">First Name
+                                    <span class="required-field">*</span>
+                                </label>
                                 <input type="text" class="form-control" id="edit_first_name" value="" required />
                             </div>
                             <div class="form-group">
-                                <label for="edit_last_name">Last Name <span class="required-field">*</span></label>
+                                <label for="edit_last_name">Last Name
+                                    <span class="required-field">*</span>
+                                </label>
                                 <input type="text" class="form-control" id="edit_last_name" value="" required />
                             </div>
                             <div class="form-group">
-                                <label for="edit_email">Email <span class="required-field">*</span></label>
+                                <label for="edit_email">Email
+                                    <span class="required-field">*</span>
+                                </label>
                                 <input type="email" class="form-control" id="edit_email" value="" required />
                             </div>
                             <div class="form-group">
-                                <label for="edit_d_o_b">Date of Birth <span class="required-field">*</span></label>
-                                <input type="text" class="form-control" id="edit_d_o_b" value="" required />
+                                <label for="edit_d_o_b">Date of Birth
+                                    <span class="required-field">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="edit_d_o_b" value="" required onkeypress="return false;"/>
                             </div>
-                            
+
                             <div class="form-group">
-                                <label for="edit_designation">Designation <span class="required-field">*</span></label>
+                                <label for="edit_designation">Designation
+                                    <span class="required-field">*</span>
+                                </label>
                                 <input type="text" class="form-control" id="edit_designation" value="" required />
                             </div>
-                            
+
                             <div class="form-group">
                                 <input type="hidden" class="form-control" id="member_id">
                             </div>
-                            
+
                             <div class="modal-footer-extended">
                                 <button class="btn btn-success">Update</button>
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
